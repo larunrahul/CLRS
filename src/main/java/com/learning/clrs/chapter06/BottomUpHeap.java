@@ -1,4 +1,4 @@
-package com.learning.clrs.chapter02;
+package com.learning.clrs.chapter06;
 
 import java.util.Arrays;
 
