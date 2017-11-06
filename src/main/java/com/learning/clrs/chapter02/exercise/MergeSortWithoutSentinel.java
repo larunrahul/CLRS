@@ -17,9 +17,7 @@ public class MergeSortWithoutSentinel {
 		}
 	}
 	
-	/*
-	 * merge operation with Integer.MAX_VALUE as sentinel element
-	 */
+	
 	private static void merge(int[] array, int start, int mid, int end){
 		int left = mid-start+1;
 		int right = end-mid;
@@ -67,6 +65,9 @@ public class MergeSortWithoutSentinel {
 	public static void main(String[] args) {
 		int[] array = new int[]{0,3,123,5,7,9,1,2,4,6,8,5,34,7};
 		System.out.println("unsorted array \t\t\t: "+Arrays.toString(array));
+		sort(array);
+		System.out.println("sorted array \t\t\t: "+Arrays.toString(array));
+		array = new int[] {4, 1, 3, 2, 16, 9, 10, 14, 8, 7, 2, 1};
 		sort(array);
 		System.out.println("sorted array \t\t\t: "+Arrays.toString(array));
 	}

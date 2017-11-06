@@ -9,11 +9,11 @@ public class RecursiveInsertionSort {
 	}
 	
 	private static void sort(int[] array, int end){
-		if(end <= 0){
-			return;
+		if(end > 0) {
+			sort(array, end-1);
+			insert(array, end);
 		}
-		sort(array, end-1);
-		insert(array, end);
+		
 	}
 	
 	private static void insert(int[] array,int endPosition){
